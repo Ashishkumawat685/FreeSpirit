@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="Media.css">
+</head>
+
+<body>
+    <section class="Main">
+        <section class="Header" id="main-header">
+            <div class="Header_logo">
+                <i onclick="ResponshivHeaderShow()" class="fa-solid fa-bars" id="Menu_icon"></i>
+                <i class="fa-solid fa-x" id="Cross_icon" onclick="ResponshivHeaderHide()"></i>
+                <img src="https://irp.cdn-website.com/c2f70584/dms3rep/multi/Free+Spirit+%281%29.svg" alt="">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="Header_Menus">
+                <div class="Menus_container">
+                    <ul>
+                        <li>
+                            <a href="#">HOME</a>
+                        </li>
+                        <li>
+                            <div class="Header_Submenu" id="Header_Submenu">
+                                <div class="Header_Main_menu" onmouseenter="toggleHeaderSubmenu()"
+                                    onmouseleave="toggleHeaderSubmenu()" onclick="toggleHeaderSubmenu()">
+                                    <a href="#">SERVICES</a>
+                                    <div class="Header_Main_menu_icon">
+                                        <i id="Header_Main_menu" class="fa-solid fa-angle-down"></i>
+
+                                    </div>
+                                </div>
+                                <div class="Header_Sub_menu">
+                                    <ul>
+                                        <li>
+                                            <a href="#">HAIRCUTS</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">ORGANIC COLOR</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">BALAYAGE</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">HIGHLIGHT</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">KERATIN</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">EXTENSIONS</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </li>
+                        <li>
+                            <a href="#">BOOKING</a>
+                        </li>
+                        <li>
+                            <a href="#">GALLERY</a>
+                        </li>
+                        <li>
+                            <a href="#">CONTACT</a>
+                        </li>
+                        <li>
+                            <a href="#">REVIEW US</a>
+                        </li>
+                        <li>
+                            <a href="#">BLOG</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Header_bottom">
+                <div class="Header_Social_Icon_container">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+
+                <div class="Header_book_button">
+                    <button>Book Now</button>
+                </div>
+            </div>
+        </section>
+        <section class="HomePage">
+            <div class="video_Containerr">
+                <div class="video_background">
+                    <video autoplay muted loop playsinline>
+                        <source src="new.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video_background_overlay"></div>
+                <div class="video_content">
+                    <h1>Our Products Make It Effortless</h1>
+                    <p>A Unique Experience with a Dedicated Specialist</p>
+                    <div class="video_book_button">
+                        <button>Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Free_Spirit_container">
+                <h1>Free Spirit Hair Salon</h1>
+                <img src="scessor.png" alt="">
+                <p>Michael’s career in Fort Lauderdale started in 2017. His endlessly diligent research and attendance
+                    of continuing
+                    education is indicative of his passion of staying current with all of the latest trends, techniques
+                    and products. <br>
+                    Employing such virtue as excellent work ethic, vast knowledge, and friendly hospitality has drawn
+                    several high profile clients from South Florida to New York and Los Angeles.</p>
+            </div>
+
+            <div class="dmRespRow">
+                <div class="dmRespRow_left">
+                    <div class="dmRespRow_left_box_image">
+                        <img src="https://lirp.cdn-website.com/c2f70584/dms3rep/multi/opt/286268990_5120556727991947_7291720834983617066_n-435w.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="dmRespRow_Right">
+                    <div class="dmRespRow_Right_box">
+                        <div class="dmRespRow_Right_box_icon">
+                            <img src="1. icon.png" alt="">
+                        </div>
+                        <div class="dmRespRow_Right_box_text">
+                            <p>100% Organic Hair Products and Color. Featuring OWAY Organic Hair Color and Styling
+                                Products</p>
+                        </div>
+                    </div>
+                    <div class="dmRespRow_Right_box_discount">
+                        <img src="dis.png" alt="">
+                        <h2>20% off</h2>
+                    </div>
+                    <div class="dmRespRow_Right_box">
+                        <div class="dmRespRow_Right_box_icon">
+                            <img src="2.icon.png" alt="">
+
+                        </div>
+                        <div class="dmRespRow_Right_box_text">
+                            <p>Specializes in Color, Balayage, Highlights, Keratin</p>
+                        </div>
+                    </div>
+                    <div class="dmRespRow_Right_box">
+                        <div class="dmRespRow_Right_box_icon">
+                            <img src="3. icon.png" alt="">
+
+                        </div>
+                        <div class="dmRespRow_Right_box_text">
+                            <p>100% Grey coverage
+
+                                Formulated for andexclusive to salon professionals</p>
+                        </div>
+                    </div>
+                    <div class="dmRespRow_Right_box">
+                        <div class="dmRespRow_Right_box_icon">
+                            <img src="4. icon.png" alt="">
+
+                        </div>
+                        <div class="dmRespRow_Right_box_text">
+                            <p>Located conveniently just minutes from Downtown Fort Lauderdale, local beaches and
+                                airport.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ............................Surrounding Areas....................... -->
+            <div class="Surrounding_Areas_container">
+                <div class="Surrounding_Areas_box1">
+                    <img src="https://lirp.cdn-website.com/c2f70584/dms3rep/multi/opt/fun+hair-938h.jpeg" alt="">
+                </div>
+                <div class="Surrounding_Areas_box2">
+                    <h1>Hair Salon in Fort Lauderdale, Fl and Surrounding Areas</h1>
+                    <p>Trusting a professional hair salon is essential because they have the expertise and experience to
+                        create your desired
+                        look. Professional stylists are trained in the latest techniques and use quality products that
+                        will help keep your hair
+                        healthy and looking its best. They also understand different types of hair, textures, and
+                        styles, so they can work with
+                        you to find a style that suits your individual needs. Michael is the lifeblood of Free Spirit
+                        Hair in Fort Lauderdale;
+                        he started his career back in 2017. With the latest trends and 100% organic products, he was
+                        able to quickly turn his
+                        clients into brand advocates. Ethics, experienced and unparalleled hospitality are what define
+                        Free Spirit Hair Salon.</p>
+                    <button>Contact Us</button>
+                </div>
+            </div>
+
+
+            <!-- ...............................Our Hair Salon ....................... -->
+            <div class="Our_Hair_Salon_Container">
+                <div class="Our_Hair_Salon_Container_Heading">
+                    <h1>Our Hair Salon Services in Fort Lauderdale, Fl
+                    </h1>
+                </div>
+                <div class="Our_Hair_Salon_Container_boxes_container">
+                    <div class="Our_Hair_Salon_box Salon_box_image1">
+                        <div class="Our_Hair_Salon_box_overlay"></div>
+                        <div class="Our_Hair_Salon_box_content">
+                            <h4>Haircuts</h4>
+                            <p>Professional stylists are available to provide consultations and take into account your
+                                style
+                                preferences to create the perfect cut for you. With so many
+                                options available, it's easy to find exactly what you're looking for.</p>
+                            <button>Learn More</button>
+                        </div>
+                    </div>
+                    <div class="Our_Hair_Salon_box Salon_box_image2">
+                        <div class="Our_Hair_Salon_box_overlay"></div>
+                        <div class="Our_Hair_Salon_box_content">
+                            <h4>Organic Color</h4>
+                            <p>Our salon offered customized organic color treatments tailored specifically to your hair
+                                type and desired look. Our
+                                staff is experienced in using only natural products that will nourish and protect your
+                                locks while providing you with
+                                stunning results.</p>
+                            <button>Learn More</button>
+                        </div>
+                    </div>
+                    <div class="Our_Hair_Salon_box Salon_box_image3">
+                        <div class="Our_Hair_Salon_box_overlay"></div>
+                        <div class="Our_Hair_Salon_box_content">
+                            <h4>Balayage</h4>
+                            <p>The technique involves sweeping or painting highlights onto the hair using foils and
+                                lighter shades of color to create
+                                an effortless, sun-kissed look. Balayage can be used on short, medium, and long lengths
+                                of hair as well as different
+                                textures such as wavy and curly.</p>
+                            <button>Learn More</button>
+                        </div>
+                    </div>
+                    <div class="Our_Hair_Salon_box Salon_box_image4">
+                        <div class="Our_Hair_Salon_box_overlay"></div>
+                        <div class="Our_Hair_Salon_box_content">
+                            <h4>Highlights</h4>
+                            <p>Highlighting is a hair coloring technique that involves lightening sections of the hair
+                                with bleach or other lightening
+                                products. It is used to create highlights and lowlights in the hair, which can add depth
+                                and dimension to your look.</p>
+                            <button>Learn More</button>
+                        </div>
+                    </div>
+                    <div class="Our_Hair_Salon_box Salon_box_image5">
+                        <div class="Our_Hair_Salon_box_overlay"></div>
+                        <div class="Our_Hair_Salon_box_content">
+                            <h4>Keratin</h4>
+                            <p>We infuse natural keratin protein into the strands, helping to strengthen and protect
+                                them from further damage. The
+                                process also leaves your locks feeling soft, smooth, and silky for up to three months.
+                            </p>
+                            <button>Learn More</button>
+                        </div>
+                    </div>
+                    <div class="Our_Hair_Salon_box Salon_box_image6">
+                        <div class="Our_Hair_Salon_box_overlay"></div>
+                        <div class="Our_Hair_Salon_box_content">
+                            <h4>Extensions</h4>
+                            <p>Feel free to contact us today. You can give us a call, email or fill out our request a
+                                inquiry form. We look forward to
+                                speaking with you!</p>
+                            <button>Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- ...............................Director ....................... -->
+            <div class="Director_container">
+                <div class="Director_box1">
+                    <img src="https://www.shutterstock.com/image-photo/service-confidence-portrait-man-barbershop-600nw-2492921467.jpg"
+                        alt="">
+                </div>
+                <div class="Director_box2">
+                    <h2>Michael James
+                    </h2>
+                    <h3>Creative Hair Director
+                    </h3>
+                    <p>Michael’s career in Fort Lauderdale started in 2017. His endlessly diligent research and
+                        attendance of continuing
+                        education is indicative of his passion of staying current with all of the latest trends,
+                        techniques, and products.
+                        Employing such virtue as excellent work ethic, vast knowledge, and friendly hospitality has
+                        drawn several high profile
+                        clients from South Florida to New York and Los Angeles.</p>
+                </div>
+            </div>
+
+
+            <!-- ...............................Why Hire Free.......................... -->
+            <div class="Why_Hire_Free_container">
+                <div class="Why_Hire_Free_content">
+                    <h1>Why Hire Free Spirit Hair Salon?</h1>
+                    <p>Free Spirit Hair Salon is the premier hair salon in Fort Lauderdale, Fl. Our experienced team of
+                        stylists is highly
+                        trained in all aspects of hair care and styling techniques to ensure you receive the best
+                        service possible. We use
+                        top-of-the-line products from top brands that provide long-lasting results for every client,
+                        leaving them feeling
+                        beautiful inside and out! With our reputation for excellent customer service and quality
+                        results, we make sure each
+                        visit is unique by tailoring your experience to meet individual needs - making Free Spirit Hair
+                        Salon the ideal choice
+                        when looking for a hair salon near you!</p>
+                </div>
+            </div>
+
+            <!-- ..............................Hair_Image_container....................... -->
+
+
+            <div class="Hair_Image_container">
+                <div class="Hair_Image_box">
+                    <img src="https://lirp.cdn-website.com/c2f70584/dms3rep/multi/opt/51D39930-53FF-47FD-8573-0197E460EF14-1920w.jpeg"
+                        alt="">
+                </div>
+                <div class="Hair_Image_box">
+                    <img src="https://lirp.cdn-website.com/c2f70584/dms3rep/multi/opt/EA29BD1A-F2EA-46B5-A649-5EC04A2CF711-1920w.jpeg"
+                        alt="">
+                </div>
+                <div class="Hair_Image_box">
+                    <img src="https://lirp.cdn-website.com/c2f70584/dms3rep/multi/opt/3461E4DF-9CEF-406B-B8B1-843D9DA37F07-1920w.jpeg"
+                        alt="">
+                </div>
+                <div class="Hair_Image_box">
+                    <img src="https://lirp.cdn-website.com/c2f70584/dms3rep/multi/opt/237EED12-2A9C-4B13-A00B-B3353F0AC61F-409c4076-1920w.jpeg"
+                        alt="">
+                </div>
+                <div class="Hair_Image_box">
+                    <img src="https://lirp.cdn-website.com/c2f70584/dms3rep/multi/opt/55520AC9-18CA-4A76-8471-615C9DFD3C0D-1920w.jpeg"
+                        alt="">
+                </div>
+                <div class="Hair_Image_box">
+                    <img src="https://lirp.cdn-website.com/c2f70584/dms3rep/multi/opt/kerotin-1920w.jpeg" alt="">
+                </div>
+                <div class="Hair_Image_box">
+                    <img src="https://lirp.cdn-website.com/c2f70584/dms3rep/multi/opt/19871519-9CA3-471B-8630-DB3D5FF1AB69-1920w.jpeg"
+                        alt="">
+                </div>
+                <div class="Hair_Image_box">
+                    <img src="https://lirp.cdn-website.com/c2f70584/dms3rep/multi/opt/F92755C1-604C-4757-8708-865CE8A6E93E-1920w.jpeg"
+                        alt="">
+                </div>
+            </div>
+
+
+            <!-- .............................. Testomonial................................ -->
+            <div class="Testomonial_Container">
+                <div class="Testomonial_Heading">
+                    <h1>Testimonials</h1>
+                    <div class="Testomonial_Starts">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper_slide_content">
+                                <p>"I’ve been looking for an all natural vegan hair salon and this place fell into my
+                                    lap!!
+                                    I actually live walking
+                                    distance too so it couldn’t be more aligned. Michelle is amazing she was patient
+                                    with me
+                                    to get the right shade of honey
+                                    blonde highlights that I wanted!
+                                    "</p>
+                                <h3>— Samantha Greene</h3>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper_slide_content">
+                                <p>"This salon is a hidden gem! I was nervous about switching stylists, but Michelle
+                                    listened to exactly what I wanted and
+                                    delivered even better. I love that they focus on clean beauty, and the space is so
+                                    relaxing!" </p>
+                                <h3>— David Morales</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper_slide_content">
+                                <p>"I came in for a quick trim and left with the best haircut I’ve had in years. Michael
+                                    is
+                                    not only skilled but also so
+                                    passionate about healthy hair. Bonus points for the vegan-friendly products!" </p>
+                                <h3>— Tina Rao</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper_slide_content">
+                                <p>"From the moment I walked in, I felt at ease. The energy of this salon is just
+                                    unmatched.
+                                    Michelle nailed the caramel
+                                    balayage I was dreaming of! The products smell divine and are good for your hair."
+                                </p>
+                                <h3>— Rachel Lee</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper_slide_content">
+                                <p>"This was my first time trying a natural hair salon and I’m never going back to
+                                    chemicals
+                                    again. Michael introduced me
+                                    to a rosemary oil that I swear is already working wonders. Highly recommend!" </p>
+                                <h3>— Jared Mitchell</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper_slide_content">
+                                <p>"I had a special event and needed a quick updo. Michelle styled it perfectly —
+                                    elegant
+                                    and effortless. I love that I
+                                    didn’t have to compromise on my values just to look good!" </p>
+                                <h3>— Anna Delgado</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper_slide_content">
+                                <p>"Honestly, this place is magic. I was dealing with some serious scalp issues and
+                                    Michael
+                                    recommended a tea tree
+                                    treatment that made a huge difference in just one week!" </p>
+                                <h3>— Lucas Singh</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper_slide_content">
+                                <p>"Walking into this salon felt like walking into a little oasis. Michelle is so sweet
+                                    and
+                                    detailed, and I left feeling
+                                    like a brand-new person. Their chamomile conditioner is my new obsession!" </p>
+                                <h3>— Emily Parsons</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper_slide_content">
+                                <p>"I got a deep conditioning treatment here and wow…my curls have never looked this
+                                    good.
+                                    Michael knows what he's doing
+                                    and cares deeply about hair health." </p>
+                                <h3>— Vanessa Brooks</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper_slide_content">
+                                <p>"I love supporting small, ethical businesses — and this salon checks every box.
+                                    Plant-based products, friendly staff,
+                                    and amazing results. Michelle is a true artist with color!" </p>
+                                <h3>— Ayesha Khan</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper_slide_content">
+                                <p>"I had such an incredible experience here! I’ve been searching for a salon that truly
+                                    cares about using natural
+                                    products, and this one blew me away. Michael took his time and made me feel
+                                    completely
+                                    comfortable. The lavender scalp
+                                    treatment was heavenly!"</p>
+                                <h3>— Elena K.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- ...................................... Award ............................... -->
+            <div class="Award_Container">
+                <div class="Award_box">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                        <path
+                            d="M76.1,38.7c7-0.6,12.5-6.5,12.5-13.7c0-7.1-5.5-13-12.5-13.6v-0.1H23.8v0.1c-7,0.6-12.5,6.5-12.5,13.6
+                                            c0,7.2,5.5,13.1,12.5,13.7c0.7,13.5,11.5,24.3,25,24.9v22.5H25.1v2.5H75v-2.5H51.2V63.6C64.7,63,75.5,52.2,76.1,38.7z M13.8,25.1
+                                            c0-5.8,4.4-10.5,10-11.1v22.2C18.2,35.5,13.8,30.8,13.8,25.1z M86.2,25.1c0,5.8-4.4,10.5-10,11.1V14C81.8,14.6,86.2,19.3,86.2,25.1z
+                                             M26.3,37.5V13.8h47.4v23.7c0,13.1-10.6,23.7-23.7,23.7S26.3,50.6,26.3,37.5z">
+                        </path>
+                    </svg>
+                    <p>National Color Specialist Award at CHI</p>
+                </div>
+                <div class="Award_box">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="1578375238"
+                        class="svg u_1578375238" data-icon-name="business_clipboard_checkmark">
+                        <path d="M34.44,36.64H58.33a.88.88,0,0,0,0-1.77H34.44a.88.88,0,0,0,0,1.77Z"></path>
+                        <path d="M34.44,44.89H58.33a.88.88,0,0,0,0-1.77H34.44a.88.88,0,0,0,0,1.77Z"></path>
+                        <path d="M34.44,53.15H58.33a.88.88,0,0,0,0-1.77H34.44a.88.88,0,0,0,0,1.77Z"></path>
+                        <path
+                            d="M59.21,60.52a.88.88,0,0,0-.88-.88H34.44a.88.88,0,0,0,0,1.77H58.33A.88.88,0,0,0,59.21,60.52Z">
+                        </path>
+                        <path
+                            d="M65,86.24a11.29,11.29,0,0,0,4.06-21.82V17.27H54.51V15.63a1.87,1.87,0,0,0-1.87-1.87H40.12a1.87,1.87,0,0,0-1.87,1.87v1.64H23.68V79H54.5A11.3,11.3,0,0,0,65,86.24Zm9.53-11.29A9.53,9.53,0,1,1,65,65.42,9.54,9.54,0,0,1,74.55,74.95ZM40,15.63a.1.1,0,0,1,.1-.1H52.64a.1.1,0,0,1,.1.1v7.46a.39.39,0,0,1-.78.05l0-.16a5.35,5.35,0,0,0-10.61,0l0,.16a.39.39,0,0,1-.39.34h-.51a.39.39,0,0,1-.39-.39ZM25.45,77.23V19H38.25v4a2.16,2.16,0,0,0,2.16,2.16h.51a2.16,2.16,0,0,0,2.14-1.88l0-.16a3.58,3.58,0,0,1,7.1,0l0,.16a2.16,2.16,0,0,0,4.3-.28V19H67.32V63.89A11.3,11.3,0,0,0,54,77.23Z">
+                        </path>
+                        <path
+                            d="M61.07,74.25a.88.88,0,0,0-1.18,1.32l4.9,4.36,6.65-8.13a.88.88,0,1,0-1.37-1.12l-5.48,6.7Z">
+                        </path>
+                    </svg>
+                    <p>Color Specialist Certified with OWAY & O&M</p>
+                </div>
+            </div>
+
+
+            <!-- ...................... Map.................................... -->
+            <div class="Map_Container">
+                <h1>Areas We Serve</h1>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d193538.70807018378!2d-74.076404!3d40.717085!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1727437241579!5m2!1sen!2sus"
+                    width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <!-- ......................... Table Section...................... -->
+            <div class="Table_container">
+                <div class="grid-table">
+                    <!-- Header Row -->
+                    <div class="cell header">Fort Lauderdale</div>
+                    <div class="cell header">Pompano Beach</div>
+                    <div class="cell header">Sea Ranch Lakes</div>
+                    <div class="cell header">Palm Aire</div>
+
+                    <!-- Row 1 -->
+                    <div class="cell highlight bold">Wilton Manors</div>
+                    <div class="cell highlight">Tamarac</div>
+                    <div class="cell highlight bold">Margate</div>
+                    <div class="cell highlight">Parkland</div>
+
+                    <!-- Row 2 -->
+                    <div class="cell bold">Coral Springs</div>
+                    <div class="cell">Coconut Creek</div>
+                    <div class="cell">Sunrise</div>
+                    <div class="cell">Hillsboro Pines</div>
+
+                    <!-- Row 3 -->
+                    <div class="cell highlight">Pompano Beach Highlands</div>
+                    <div class="cell highlight">North Lauderdale</div>
+                    <div class="cell highlight">Roosevelt Gardens</div>
+                    <div class="cell highlight bold">Lauderdale Lakes</div>
+
+                    <!-- Row 4 -->
+                    <div class="cell">Washington Park</div>
+                    <div class="cell">Lighthouse Point</div>
+                    <div class="cell">Hillsboro Beach</div>
+                </div>
+            </div>
+
+
+
+            <!-- ........................... Footer.............................. -->
+            <Footer>
+                <div class="footer_Container1">
+                    <div class="Footer_box1">
+                        <h4>ADDRESS</h4>
+                        <p>981 E Commercial Blvd #201, Oakland Park, FL 33334</p>
+                        <span>954-504-5593</span>
+                    </div>
+                    <div class="Footer_box2">
+                        <img src="https://irp.cdn-website.com/c2f70584/dms3rep/multi/Free+Spirit+%281%29.svg" alt="">
+                    </div>
+                    <div class="Footer_box3">
+                        <h4>OPENING HOURS</h4>
+                        <dl class="open-hours-data">
+                            <div class="open-hours-item">
+                                <dt day="0">Monday</dt>
+                                <dd>Closed</dd>
+                            </div>
+                            <div class="open-hours-item">
+                                <dt day="1">Tue - Fri</dt>
+                                <dd> <time>9:00 am</time>
+                                    - <time>8:00 pm</time>
+                                </dd>
+                            </div>
+                            <div class="open-hours-item">
+                                <dt day="5">Saturday</dt>
+                                <dd> <time>9:00 am</time>
+                                    - <time>5:00 pm</time>
+                                </dd>
+                            </div>
+                            <div class="open-hours-item">
+                                <dt day="6">Sunday</dt>
+                                <dd>Closed</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+                <div class="footer_Container2">
+                    <div class="Footer_bottom_box1">
+                        <div></div>
+                    </div>
+                    <div class="Footer_bottom_box2">
+                        <i class="bi bi-twitter-x"></i>
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-linkedin"></i>
+                    </div>
+                    <div class="Footer_bottom_box3">
+                        <div></div>
+                    </div>
+                </div>
+            </Footer>
+        </section>
+
+    </section>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            }
+        });
+    </script>
+</body>
+
+</html>
